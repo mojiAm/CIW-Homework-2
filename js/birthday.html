@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Birthday</title>
+	<script type="text/javascript">
+		var bday=new Date(prompt('Birthday','18 apr 1984'));
+		var now=new Date();
+		var msAge=now.getTime()-bday.getTime();
+		var age=new Date(msAge);
+		document.write(age.getFullYear()-'1970');
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
