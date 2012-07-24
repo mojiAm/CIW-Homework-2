@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>js fun</title>
+	<style type="text/css">
+		.btn{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 40px;
+			width: 80px;
+			line-height: 40px;
+			text-align: center;
+			background-color: yellow;
+			-webkit-transition: all 500ms;
+		}
+	</style>
+	<script type="text/javascript">
+		function rndcolor(){
+			var c="#";
+			for (var i=0;i<6;i++){
+				c+=rnd(0,15).toString(16);
+			}
+			return c;
+		}
+		function rnd(a,b){
+			return Math.floor(Math.random()*(b-a+1))+a;
+		}
+		window.onload=function(){
+			var btns=document.getElementsByClassName('btn');
+			for (var i=0;i<btns.length;i++){
+				btns.item(i).style.left=rnd(5,90)+'%';
+				btns.item(i).style.top=rnd(5,95)+'%';
+				btns.item(i).style.backgroundColor=rndcolor();
+				btns.item(i).onmouseover=function(){
+					this.style.left=rnd(5,95)+'%';
+					this.style.top=rnd(5,95)+'%';
+					this.style.backgroundColor=rndcolor();
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		for (var i=0;i<100;i++){
+			document.write('<div class="btn">Click Me</div>')
+		}
+	</script>
+</body>	
+</html>
