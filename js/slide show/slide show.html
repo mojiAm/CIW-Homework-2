@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="slide show.css" />
+	<title>Slide Show</title>
+</head>
+<body>
+	<div class="container">
+		<div class="slideshow">
+			<div class="train">
+				<div style="background-image:url('images/pic1.jpg');"></div>
+				<div style="background-image:url('images/pic2.jpg');"></div>
+				<div style="background-image:url('images/pic3.jpg');"></div>
+				<div style="background-image:url('images/pic4.jpg');"></div>
+			</div>
+			<ul class="btn">
+				<li onclick="document.getElementsByClassName('train').item(0).style.left='0px'";></li>
+				<li onclick="document.getElementsByClassName('train').item(0).style.left='-450px'";></li>
+				<li onclick="document.getElementsByClassName('train').item(0).style.left='-900px'";></li>
+				<li onclick="document.getElementsByClassName('train').item(0).style.left='-1350px'";></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>

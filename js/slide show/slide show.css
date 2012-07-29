@@ -1,0 +1,55 @@
+.container{
+	width: 980px;
+	margin:0 auto;
+	padding-top: 1px;
+}
+
+.slideshow{
+	width: 450px;
+	height: 325px;
+	position: relative;
+	overflow: hidden;
+	margin: 30px auto 0;
+}
+
+.train{
+	width: 2200px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition : left 800ms;
+}
+
+.train > div{
+	width: 450px;
+	height: 300px;
+	float: left;
+}
+
+ul.btn{
+	height: 15px;
+	list-style: none;
+	position: absolute;
+	top: 310px;
+	margin-right: 5px;
+	right: 0;	
+	cursor: pointer;
+}
+
+ ul.btn li{
+ 	float: left;
+ 	width: 20px;
+ 	height: 10px;
+	background-color: #222;
+	border-radius: 2px;
+	margin-left: 5px;
+	-webkit-transition: all 1s;
+}
+
+ul.btn li:hover{
+	height: 13px;
+	margin-top: -1.5px;
+	background-color: #555;
+	-webkit-transition: all 300ms;
+}
