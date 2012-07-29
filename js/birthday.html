@@ -4,14 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Birthday</title>
 	<script type="text/javascript">
-		var bday=new Date(prompt('Birthday','18 apr 1984'));
-		var now=new Date();
-		var msAge=now.getTime()-bday.getTime();
-		var age=new Date(msAge);
-		document.write(age.getFullYear()-'1970');
+		window.onload=function(){
+			var bday=new Date(prompt('Birthday','18 apr 1984'));
+			var now=new Date();
+			var msAge=now.getTime()-bday.getTime();
+			var age=new Date(msAge);
+			
+			var year=age.getFullYear()-'1970';
+			var month=age.getMonth()-'1';
+			var day=age.getDate();
+			var hour=age.getHours();
+			var min=age.getMinutes();
+			var sec=age.getSeconds();
+			var msec=age.getMilliseconds();
+
+			document.getElementById('text').innerHTML=year+"Year " + month+"Month " + day+"Day " + hour+"Hour " + min+"Min " + sec+"Second " + msec+"Milliseconds";
+		}
 	</script>
 </head>
 <body>
-	
+	<div id="text"></div>
 </body>
 </html>
