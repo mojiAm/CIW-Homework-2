@@ -47,7 +47,7 @@ ul.btn{
 	-webkit-transition: all 1s;
 }
 
-ul.btn li:hover{
+ul.btn li:hover,ul.btn li.active{
 	height: 13px;
 	margin-top: -1.5px;
 	background-color: #555;
