@@ -44,6 +44,7 @@ div.slideshow div.train{
 	top: 0;
 	left: 0;
 	z-index: 2;
+	-webkit-transition:left 700ms;
 }
 
 div.slideshow div.train > div{
