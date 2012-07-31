@@ -95,7 +95,8 @@ div.slideshow ul.btn li{
 	background-position:0 0 ;
 }
 
-div.slideshow ul.btn li:hover{
+div.slideshow ul.btn li:hover,
+div.slideshow ul.btn li.active{
 	background-image: url('images/btn.png');
 	background-position: center bottom;
 }
