@@ -1,0 +1,98 @@
+body{
+	background-color: #EFEFEF;
+	background-image: url('images/background.png');
+}
+
+div.container{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 1px;
+}
+
+div.frame{
+	width: 739px;
+	height: 360px;
+	background-image: url("images/frame.png");
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 20px auto 0;
+}
+
+div.frame div.new{
+	width: 112px;
+	height: 112px;
+	position: absolute;
+	z-index: 10;
+	background-image: url('images/new.png');
+	top: 0px;
+	left: 65px;
+}
+
+div.frame div.slideshow{
+	width: 570px;
+	height: 310px;
+	overflow: hidden;
+	position: absolute;
+	top: 18px;
+	left: 83px;
+}
+
+div.slideshow div.train{
+	width: 4200px;
+	height: 270px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+div.slideshow div.train > div{
+	width: 570px;
+	height: inherit;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.frame div.prev{
+	width: 24px;
+	height: 43px;
+	background-image: url('images/prev.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 125px;
+	left: 44px;
+}
+
+div.frame div.next{
+	width: 24px;
+	height: 43px;
+	background-image: url('images/next.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 125px;
+	right: 46px;
+}
+
+div.slideshow ul.btn{
+	height: 13px;
+	list-style: none;
+	position: absolute;
+	bottom: 0;
+	left: 230px;
+}
+
+div.slideshow ul.btn li{
+	float: left;
+	width: 12px;
+	height: 13px;
+	cursor: pointer;
+	margin-left: 3px;
+	background-image: url('images/btn.png');
+	background-position:0 0 ;
+}
+
+div.slideshow ul.btn li:hover{
+	background-image: url('images/btn.png');
+	background-position: center bottom;
+}
