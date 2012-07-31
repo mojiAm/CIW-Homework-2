@@ -62,6 +62,7 @@ div.frame div.prev{
 	position: absolute;
 	top: 125px;
 	left: 44px;
+	cursor: pointer;
 }
 
 div.frame div.next{
@@ -72,6 +73,7 @@ div.frame div.next{
 	position: absolute;
 	top: 125px;
 	right: 46px;
+	cursor: pointer;
 }
 
 div.slideshow ul.btn{
