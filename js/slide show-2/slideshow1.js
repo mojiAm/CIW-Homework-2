@@ -24,12 +24,9 @@ window.onload=function(){
 		gotoslide(currentSlide+1);
 	}
 
-	nextAutoPlay= next.onmouseout=function(){
-		nextStopPlay();
-	}
-
 	prevslide= prev.onclick=function(){
 		gotoslide(currentSlide-1);
+		
 	}
 
 	autoPlay= frame.onmouseout=function(){
