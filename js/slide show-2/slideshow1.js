@@ -30,7 +30,7 @@ window.onload=function(){
 	}
 
 	autoPlay= frame.onmouseout=function(){
-		play= setInterval(nextslide,2000);
+		play= setInterval(nextslide,5000);
 	}
 
 	autoStop= frame.onmouseover=function(){
