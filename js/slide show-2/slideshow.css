@@ -55,26 +55,32 @@ div.slideshow div.train > div{
 	background-size: cover;
 }
 
-div.frame div.prev{
+div.frame div.prev,
+div.frame div.next{
 	width: 24px;
 	height: 43px;
 	background-image: url('images/prev.png');
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 125px;
-	left: 44px;
 	cursor: pointer;
+	opacity: 0;
+	-webkit-transition: opacity 600ms;
+}
+
+div.frame div.prev{
+	background-image: url('images/prev.png');
+	left: 44px;
 }
 
 div.frame div.next{
-	width: 24px;
-	height: 43px;
 	background-image: url('images/next.png');
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 125px;
 	right: 46px;
-	cursor: pointer;
+}
+
+div.frame:hover div.prev,
+div.frame:hover div.next{
+	opacity: 1;
 }
 
 div.slideshow ul.btn{

@@ -1,12 +1,15 @@
 window.onload=function(){
+	var frame=document.getElementsByClassName('frame').item(0);
+	var next=frame.getElementsByClassName('next').item(0);
+	var prev=frame.getElementsByClassName('prev').item(0);
 	var slideshow=document.getElementsByClassName('slideshow').item(0);
 	var train=slideshow.getElementsByClassName('train').item(0);
 	var list=slideshow.getElementsByClassName('btn').item(0).getElementsByTagName('li');
 	var currentSlide=0;
-	var play=false;
 
 	function gotoslide(n){
 		if (n > list.length-1) n=0;
+		if (n < 0) n=list.length-1;
 		train.style.left=(-570*n)+'px';
 		list.item(currentSlide).className='';
 		list.item(n).className='active';
@@ -17,11 +20,23 @@ window.onload=function(){
 		gotoslide(currentSlide+1);
 	}
 
-	autoPlay= train.onmouseout=function(){
+	nextslide= next.onclick=function(){
+		gotoslide(currentSlide+1);
+	}
+
+	nextAutoPlay= next.onmouseout=function(){
+		nextStopPlay();
+	}
+
+	prevslide= prev.onclick=function(){
+		gotoslide(currentSlide-1);
+	}
+
+	autoPlay= frame.onmouseout=function(){
 		play= setInterval(nextslide,2000);
 	}
 
-	autoStop= train.onmouseover=function(){
+	autoStop= frame.onmouseover=function(){
 		clearInterval(play);
 	}
 
