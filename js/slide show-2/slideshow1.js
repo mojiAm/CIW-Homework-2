@@ -17,11 +17,11 @@ window.onload=function(){
 		gotoslide(currentSlide+1);
 	}
 
-	autoPlay= slideshow.onmouseout=function(){
+	autoPlay= train.onmouseout=function(){
 		play= setInterval(nextslide,2000);
 	}
 
-	autoStop= slideshow.onmouseover=function(){
+	autoStop= train.onmouseover=function(){
 		clearInterval(play);
 	}
 
