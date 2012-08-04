@@ -16,16 +16,15 @@
 			<div class="slideshow">
 				<div class="train">
 					<?php
-					$files= scandir('./images/');
+					$files= scandir('./images/');	
 					$counter=0;
-					foreach ($files as $file) {
-						$exe= end(explode('.',$file));
-						if ($exe == 'jpg'){
-							echo '<div style="background-image:url(./images/$file);"></div>';
+						foreach ($files as $file) {
+							$exe = pathinfo($file);
+						if ($exe['extension'] == "jpg"){
+							echo "<div style=\"background-image:url(./images/$file);\"></div>";
 							$counter++;
 						}
-					}
-					
+					}					
 					?>
 				</div>
 				<ul class="btn">
