@@ -28,6 +28,19 @@ div.frame div.new{
 	left: 65px;
 }
 
+div.frame div.bgloader{
+	width: 570px;
+	height: 270px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image    : url('images/loading.gif');
+	background-repeat   : no-repeat;
+	background-position : center center;
+}
+
 div.frame div.slideshow{
 	width: 570px;
 	height: 310px;
@@ -35,9 +48,6 @@ div.frame div.slideshow{
 	position: absolute;
 	top: 18px;
 	left: 83px;
-	background-image    : url('images/loading.gif');
-	background-repeat   : no-repeat;
-	background-position : center center;
 }
 
 div.slideshow div.train{
