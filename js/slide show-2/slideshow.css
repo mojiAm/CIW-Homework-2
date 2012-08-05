@@ -28,6 +28,19 @@ div.frame div.new{
 	left: 65px;
 }
 
+div.frame div.bgloader{
+	width: 570px;
+	height: 270px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image    : url('images/loading.gif');
+	background-repeat   : no-repeat;
+	background-position : center center;
+}
+
 div.frame div.slideshow{
 	width: 570px;
 	height: 310px;
@@ -38,7 +51,7 @@ div.frame div.slideshow{
 }
 
 div.slideshow div.train{
-	width: 4200px;
+	width: 10000px;
 	height: 270px;
 	position: absolute;
 	top: 0;
@@ -84,11 +97,14 @@ div.frame:hover div.next{
 }
 
 div.slideshow ul.btn{
+	width: 570px;
 	height: 13px;
 	list-style: none;
 	position: absolute;
 	bottom: 0;
-	left: 230px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 div.slideshow ul.btn li{
