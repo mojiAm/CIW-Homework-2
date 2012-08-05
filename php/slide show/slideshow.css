@@ -35,6 +35,9 @@ div.frame div.slideshow{
 	position: absolute;
 	top: 18px;
 	left: 83px;
+	background-image    : url('images/loading.gif');
+	background-repeat   : no-repeat;
+	background-position : center center;
 }
 
 div.slideshow div.train{
