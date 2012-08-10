@@ -1,15 +1,14 @@
 div.container{
-	width: 950px;
+	width: 1200px;
 	margin: 0 auto;
 	padding-top: 1px;
 }
 
 div.slideshow{
-	width: 960px;
-	height: 408px;
+	width: 1160px;
+	height: 405px;
 	margin: 10px auto 0;
 	overflow: hidden;
-	border-radius: 5px;
 	position: relative;
 	background-image: url('images/loading.gif');
 	background-repeat: no-repeat;
@@ -22,7 +21,6 @@ div.slideshow .train{
 }
 
 div.slideshow .train > div{
-	width: 960px;
 	height: inherit;
 	float: left;
 	background-repeat: no-repeat;
