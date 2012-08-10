@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var widths= Math.ceil(1160/5);
 
 	slides.css({width:widths+'px'});
+	slides.last().css({'padding-right':'500px'});
 
 	slides.mouseover(function(){
 		slides.animate({width:'50px'},500);
