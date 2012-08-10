@@ -12,11 +12,18 @@
 	<div class="container">
 		<div class="slideshow">
 			<div class="train">
-				<div style="background-image:url('images/1.png');"></div>
-				<div style="background-image:url('images/2.png');"></div>
-				<div style="background-image:url('images/3.png');"></div>
-				<div style="background-image:url('images/4.png');"></div>
-				<div style="background-image:url('images/5.png');"></div>
+				<?php
+					$path= './images/';
+					$files= scandir($path);
+					foreach ($files as $file) {
+						$exp= explode('.',$file);
+						$type= end($exp);
+						if ($type == 'png'){
+							echo "<div style=\"background-image:url('$path/$file');\"></div>";
+						}
+					}
+				?>
+				
 			</div>
 		</div>
 	</div>
