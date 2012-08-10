@@ -3,13 +3,12 @@ $(document).ready(function(){
 	var widths= Math.ceil(1160/5);
 
 	slides.css({width:widths+'px'});
-	
 
 	slides.mouseover(function(){
-		slides.css({width:'50px'});
-		$(this).css({width:'960px'});
+		slides.animate({width:'50px'},500);
+		$(this).animate({width:'960px'},500);
 	})
 	slides.mouseout(function(){
-		slides.css({width:widths+'px'});
+		slides.animate({width:widths+'px'},500);
 	})
 })
