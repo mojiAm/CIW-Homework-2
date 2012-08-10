@@ -26,4 +26,5 @@ div.slideshow .train > div{
 	float: left;
 	background-repeat: no-repeat;
 	background-position: left top;
+	cursor: pointer;
 }
