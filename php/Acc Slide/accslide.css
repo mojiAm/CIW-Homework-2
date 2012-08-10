@@ -1,0 +1,24 @@
+div.container{
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 1px;
+}
+
+div.slideshow{
+	width: 960px;
+	height: 408px;
+	margin: 10px auto 0;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+div.slideshow .train{
+	width: 10000px;
+	height: inherit;
+}
+
+div.slideshow .train > div{
+	width: 960px;
+	height: inherit;
+	float: left;
+}
