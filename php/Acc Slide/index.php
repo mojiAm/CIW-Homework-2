@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Acc Slideshow</title>
-	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../reset.css" />
 	<link rel="stylesheet" type="text/css" href="accslide.css" />
-	<script type="text/javascript" src="zepto.js"></script>
+	<script type="text/javascript" src="../../zepto.js"></script>
 	<script type="text/javascript" src="Accslide.js"></script>
 </head>
 <body>
