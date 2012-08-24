@@ -5,23 +5,22 @@ div.container{
 }
 
 nav.menu{
-	position: relative;
-	margin: 0 auto;
+
 }
 
 nav.menu menu{
-	position: absolute;
 	list-style: none;
-	top: -91px;
-	left: 0;
 }
 
-nav.menu li{
+nav.menu menu li{
 	float: left;
 	border-right: 8px solid white;
 }
 
 nav.menu li a{
+	position: relative;
+	top: 0;
+	left: 0;
 	display: block;
 	width: 80px;
 	height: 90px;
