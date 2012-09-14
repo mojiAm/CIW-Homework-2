@@ -118,6 +118,23 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 }
 
 .get_img img{
+	float: left;
 	display: block;
 	margin-left: 10px;
+}
+
+.get_img a{
+	cursor: pointer;
+}
+
+.darkbox{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	background-attachment: center center;
+	display: none;
+	opacity: 0;
 }
