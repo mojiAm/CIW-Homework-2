@@ -11,6 +11,16 @@
 								$price= $meta['price'][0];
 								echo "<p>Price: $price $</p>";
 							}
+
+							if (count($meta['img'])>0){
+								echo "<div class='get_img'>";
+								foreach ($meta['img'] as $img_id) {
+									$img_small= wp_get_attachment_image($img_id,'thumbnail');
+									$img_larg= wp_get_attachment_image_src($img_id, 'larg');
+									echo "<a href='$img_larg[0]'>$img_small</a>";
+								}
+								echo "</div>";
+							}
 						?>
 					</article>
 		<?php } ?>
